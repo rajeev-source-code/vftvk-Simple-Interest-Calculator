@@ -3,8 +3,9 @@ function compute()
     p = document.getElementById("principal").value;
 
     if (p == "" || p <= 0) {
-    		alert('Please enter a valid Amount number');
-  			return;	
+        alert('Please enter a positive Amount number');
+        document.getElementById("principal").focus();
+        return;	
   	}
     
     r = document.getElementById("rate").value;
