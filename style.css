@@ -1,4 +1,55 @@
-body {background-color:tan;}
-h1{color:green;}
+* {
+  box-sizing: border-box;
+}
 
+.col1 {
+  width: 40%;
+  float: left;
+  padding-left: 50px;
+  padding-bottom: 10px;
+}
+
+.col2 {
+  width: 60%;
+  float: left;
+  padding-bottom: 10px;
+}
+
+.col12 {
+  width: 100%;
+  float: left;
+  padding-left: 50px;
+  padding-bottom: 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.main {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-right: 150px;
+  margin-left: 150px;
+  padding-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+}
+
+.resultNumber {
+  background-color: yellow;
+}
 
